@@ -34,7 +34,7 @@ const game = () => {
         const computerChoice = computerOptions[choice];
 
         //function to check winner of a single round
-        winner(this.alt, computerChoice);
+        winner(option.alt, computerChoice);
 
         //calling gameover function after 10 moves
         if (moves == 10) {
@@ -49,19 +49,19 @@ const game = () => {
     if (player === computer) {
       result.textContent = `Player: ${player} (TIE!) Computer: ${computer}`;
     } else if (player == "rock" && computer == "scissor") {
-      playerScore++;
+      playerScore += 1;
       playerScoreCount.textContent = playerScore;
       result.textContent = `Player: ${player} (YOU WON!) Computer: ${computer}`;
     } else if (player == "paper" && computer == "rock") {
-      playerScore++;
+      playerScore += 1;
       playerScoreCount.textContent = playerScore;
       result.textContent = `Player: ${player} (YOU WON!) Computer: ${computer}`;
     } else if (player == "scissor" && computer == "paper") {
-      playerScore++;
+      playerScore += 1;
       playerScoreCount.textContent = playerScore;
       result.textContent = `Player: ${player} (YOU WON!) Computer: ${computer}`;
     } else {
-      computerScore++;
+      computerScore += 1;
       computerScoreCount.textContent = computerScore;
       result.textContent = `Player: ${player} (COMPUTER WON!) Computer: ${computer}`;
     }
