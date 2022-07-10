@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors - The Game.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/scissors.png" />
+  </head>
+  <body>
+    <!--Title-->
+    <h1 class="title">Rock-Paper-Scissor.</h1>
+
+    <div class="game">
+    <!--Display player and computer score-->
+    <div class="score">
+      <div class="playerScore">
+        <h2>Player</h2>
+        <p class="p-count">0</p>
+      </div>
+      <div class="computerScore">
+        <h2>Computer</h2>
+        <p class="c-count">0</p>
+      </div>
+    </div>
+
+    <div class="move">Choose your move</div>
+
+    <!--Number of moves left before game ends-->
+    <div class="movesLeft">Moves Left: 10</div>
+
+    <!--Player options-->
+      <div class="options">
+        <img class="rock" src="./images/rock.png" alt="rock" />
+        <img class="paper" src="./images/paper.png" alt="paper" />
+        <img class="scissor" src="./images/scissors.png" alt="scissors" />
+      </div>
+<!--Final result-->
+    <div class="result"></div>
+     <!--Restart game-->
+        <button id="restart">Restart game</button>
+      </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
